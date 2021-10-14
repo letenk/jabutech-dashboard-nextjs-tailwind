@@ -1,3 +1,32 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    // Extension support eslin
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    // Off react js scope
+    "react/react-in-jsx-scope": "off",
+    // Nonaktif tag a error after using "Link:
+    "jsx-a11y/anchor-is-valid": "off",
+    // Off spead props
+    "react/jsx-props-no-spreading": "off",
+    "no-underscore-dangle": "off",
+    // Double quotes allow
+    "allowTemplateLiterals": false
+  }
 }
