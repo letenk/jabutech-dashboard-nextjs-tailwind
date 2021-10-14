@@ -1,4 +1,5 @@
-import Button from "../components/atoms/button";
+import ButtonLink from "../components/atoms/ButtonLink";
+import ButtonSubmit from "../components/atoms/ButtonSubmit";
 import Sidebar from "../components/organisms/Sidebar";
 
 export default function index() {
@@ -14,12 +15,15 @@ export default function index() {
         <div className="py-5 px-5 w-full lg:w-10/12">
           {/* div 1 content */}
           <div className="mb-5">
-            <Button
+            <ButtonLink
               title="Create"
               icon="plus-circle"
               colorButton="green"
               href="tambah-data-revenue"
             />
+          </div>
+          <div className="mb-5">
+            <ButtonSubmit title="Save" colorButton="green" />
           </div>
           {/* div 2 */}
           <div className="border-2 rouded   bg-white">

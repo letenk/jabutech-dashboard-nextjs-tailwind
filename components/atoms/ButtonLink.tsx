@@ -7,7 +7,7 @@ interface ButtonItemProps {
   colorButton: String;
   href: String;
 }
-export default function Button(props: ButtonItemProps) {
+export default function ButtonLink(props: ButtonItemProps) {
   // Get proprty props
   const { title, icon, colorButton, href = "#" } = props;
   return (
