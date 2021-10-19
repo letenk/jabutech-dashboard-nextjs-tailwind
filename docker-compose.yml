@@ -1,0 +1,14 @@
+# Docker compose version
+version: "3"
+
+services:
+  node:
+    container_name: frontend-e-ga
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - ./node_modules:/app/node_modules
+    ports:
+      - "8081:3000"
