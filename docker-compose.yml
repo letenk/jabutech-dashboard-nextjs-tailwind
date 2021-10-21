@@ -3,7 +3,7 @@ version: "3"
 
 services:
   node:
-    container_name: frontend-e-ga
+    container_name: dashboard-tailwind-nextjs
     build:
       context: .
       dockerfile: Dockerfile
